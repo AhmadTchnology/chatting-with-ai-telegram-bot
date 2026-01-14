@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose port (if your bot serves a webhook; optional)
-EXPOSE 2222
+EXPOSE 7123
 
 # Run the bot
 CMD ["python", "bot.py"]

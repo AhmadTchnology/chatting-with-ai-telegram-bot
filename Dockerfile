@@ -21,5 +21,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy bot source code
 COPY . .
 
+# Expose port (if your bot serves a webhook; optional)
+EXPOSE 2222
+
 # Run the bot
 CMD ["python", "bot.py"]
